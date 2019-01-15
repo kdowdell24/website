@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $first_name = $_POST['first-name'];
     $last_name = $_POST['last-name'];
     $subject = $_POST['subject'];
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'] . "\n\n" . $from;
 
     $headers = "From: $from";
 
