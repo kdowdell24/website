@@ -1,0 +1,288 @@
+/*Color Palette 
+
+lighter gray - #404040 
+darker gray - #333333 */
+
+/* border box fix */
+ html {
+     box-sizing: border-box;
+}
+ *, *:before, *:after {
+     box-sizing: inherit;
+}
+
+/* Global styles */
+ body {
+     margin: 0;
+     padding-top: 65px;
+     font-family: "Helvetica";
+     font-weight: 400;
+     letter-spacing: 0.03em;
+     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/Koh_Phi_Phi_Don.jpg');
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-position: top;
+     background-size: cover;
+     background-color: #404040;
+     color: white;
+}
+ h1, h2, h3, h4, h5, h6 {
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     font-weight: 400;
+}
+ h2 {
+     padding-bottom: 5%;
+     margin: 0;
+     text-align: center;
+}
+
+/* Gray and white background sections */
+ .gray-bg {
+     background-color: #404040;
+     color: white;
+}
+ .white-bg {
+     background-color: white;
+     color: #404040;
+}
+ .gray-bg, .white-bg {
+     padding: 5% 10%;
+}
+ .gray-bg a {
+     color: white;
+     text-decoration: none;
+}
+ .gray-bg a:hover {
+     color: white;
+     text-decoration: underline;
+     transition: 0.3s;
+}
+ .white-bg a {
+     color: #404040;
+     text-decoration: none;
+}
+ .white-bg a:hover {
+     color: #404040;
+     text-decoration: underline;
+     transition: 0.3s;
+}
+
+/* Navbar */
+ .navbar {
+     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+     border: none;
+     border-radius: 0%;
+     margin-bottom: 0px;
+     padding: 0 10%;
+     transition: 0.5s;
+}
+ .navbar:hover {
+     background: rgba(51, 51, 51, 0.9);
+     border: none;
+     border-radius: 0%;
+     margin-bottom: 0px;
+     transition: 0.5s;
+}
+ .solid-navbar {
+     background: rgba(51, 51, 51, 0.9);
+     border: none;
+     border-radius: 0%;
+     margin-bottom: 0px;
+     transition: 0.5s;
+	 padding: none;
+}
+ .navbar-brand > img {
+     height: 100%;
+     width: auto;
+}
+ .navbar-brand {
+     height: 4em;
+}
+ .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+     color: white;
+     padding: 2em;
+}
+ .navbar-default .navbar-nav > li > a:hover {
+     background-color: white;
+     color: 404040;
+     transition: 0.3s;
+}
+ .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+     color: white;
+     background-color: rgba(51, 51, 51, 0.5);
+}
+
+/* Navbar dropdown menu */
+
+ .navbar-nav > li > .dropdown-menu {
+     background: rgba(64, 64, 64, 0.5);
+     border: none;
+     border-radius: 0%;
+     margin-bottom: 0px;
+     padding: none;
+     transition: 0.5s;
+}
+
+.navbar-nav .open .dropdown-menu {
+	background: rgba(102, 102, 102, 0.9);
+    border: none;
+}
+
+ .dropdown-menu > li > a {
+     color: white;
+     margin: none;
+}
+ .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     color: white;
+     transition: 0.3s;
+}
+ .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+     background-color: white;
+     color: #404040;
+     transition: 0.3s;
+}
+
+/* Navbar toggle button */
+
+.navbar-toggle {
+     border: solid white 1px;
+     background: transparent !important;
+	 height: 3em;
+	 width: auto;
+	 margin-top: 1em;
+}
+ .navbar-toggle .icon-bar {
+     width: 22px;
+     transition: all 0.2s;
+	 
+}
+ .navbar-toggle .top-bar {
+     transform: rotate(45deg);
+     transform-origin: 10% 10%;
+}
+ .navbar-toggle .middle-bar {
+     opacity: 0;
+}
+ .navbar-toggle .bottom-bar {
+     transform: rotate(-45deg);
+     transform-origin: 10% 90%;
+}
+ .navbar-toggle.collapsed .top-bar {
+     transform: rotate(0);
+	 background-color: white;
+}
+ .navbar-toggle.collapsed .middle-bar {
+     opacity: 1;
+	 background-color: white;
+}
+ .navbar-toggle.collapsed .bottom-bar {
+     transform: rotate(0);
+	 background-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+
+
+/* Header */
+
+ .jumbotron {
+     text-align: center;
+     padding: 25em 0;
+     margin: 0;
+     background: none;
+	 font-size: 1em;
+}
+
+header h2 {
+	font-size: 1.5em;
+}
+
+/* Experience */
+
+#experience h3, h4 {
+	text-align: center;
+}
+ .job-img {
+     height: 10em;
+     width: 10em;
+     border-radius: 0.5em;
+     margin-bottom: 1em;
+}
+ .job-title {
+     text-transform: uppercase;
+}
+
+/* Portfolio */
+
+#portfolio h3 {
+	text-align: center;
+}
+
+/* Photography */
+
+.gallery-img {
+    height: 100%;
+    width: 30em;
+	margin-bottom: 2em;
+}
+
+figure {
+	margin: 0 0 5em 0;
+}
+
+figcaption {
+	text-align: center;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #333333;
+}
+
+/* Web */
+
+#portfolio .icon {
+	height: 5em;
+	width: 5em;
+	margin: 1em;
+}
+
+
+/* Footer */
+ form {
+     margin: auto;
+     width: 50%;
+}
+ .form-control {
+     border-radius: 0;
+}
+ .btn-default {
+     background-color: #404040;
+     border-color: white;
+     color: white;
+     border-radius: 0;
+}
+ .btn-default:hover {
+     background-color: white;
+     border-color: white;
+     transition: 0.3s;
+     color: #404040;
+}
+ .input-lg {
+     height: 5em;
+}
+ .icon {
+     height: 2em;
+     width: 2em;
+     opacity: 0.5;
+}
+ .icon:hover {
+     opacity: 1;
+     transition: 0.3s;
+}
+ #copyright {
+     padding-top: 4em;
+     text-align: center;
+}
+ 
