@@ -8,7 +8,6 @@ if(isset($_POST['submit'])){
     $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
 
     $headers = "From: $from";
-	$headers .= "Reply-To: $from";
 
     mail($to,$subject,$message,$headers);
     echo "Mail Sent. Thank you " . $first_name . " for getting in touch!";
