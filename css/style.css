@@ -47,7 +47,7 @@ darker gray - #333333 */
      color: #404040;
 }
  .gray-bg, .white-bg {
-     padding: 5% 10%;
+     padding: 10% 15%;
 }
  .gray-bg a {
      color: white;
@@ -250,10 +250,7 @@ figcaption {
 
 
 /* Footer */
- form {
-     margin: auto;
-     width: 50%;
-}
+ 
  .form-control {
      border-radius: 0;
 }

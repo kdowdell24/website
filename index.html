@@ -243,41 +243,44 @@
         <h2>Contact</h2>
 
         <!--------Contact form begin------->
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<form id="contactform" name="contactform" method="post" action="php/send_email_form.php" enctype="multipart/form-data">
+					<p>Feel free to contact me for business/networking opportunities or just to say hi!</p>
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="first-name">First Name</label>
+							<input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="last-name">Last Name</label>
+							<input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label for="email">Email address</label>
+							<input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label for="subject">Subject</label>
+							<input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label for="message">Message</label>
+							<textarea class="form-control input-lg" name="message" id="message" placeholder="Message" required></textarea>
+						</div>
+					</div>
 
-        <form id="contactform" name="contactform" method="post" action="php/send_email_form.php" enctype="multipart/form-data">
-            <p>Feel free to contact me for business/networking opportunities or just to say hi!</p>
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-12">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-12">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-12">
-                    <label for="message">Message</label>
-                    <textarea class="form-control input-lg" name="message" id="message" placeholder="Message" required></textarea>
-                </div>
-            </div>
-			
-			<input type="hidden" name="sendtoemail" value="kris@krisdowdell.com">
-            <button id="submit-contact" type="submit" name="submit" class="btn btn-default">Submit</button>
-        </form>
+					<input type="hidden" name="sendtoemail" value="kris@krisdowdell.com">
+					<button id="submit-contact" type="submit" name="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
 
         <!--------Contact form end------->
 
