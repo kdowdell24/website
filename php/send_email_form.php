@@ -7,10 +7,7 @@ if(isset($_POST['submit'])){
     $subject = $_POST['subject'];
     $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'] . "\n\n" . $from;
 
-    $headers = "From: $from";
 
-    mail($to,$subject,$message,$headers);
-    echo "Message sent, thank you " . $first_name . " for getting in touch!";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    mail($to,$subject,$message);
     }
 ?>

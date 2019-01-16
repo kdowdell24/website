@@ -24,6 +24,7 @@ darker gray - #333333 */
      background-position: top;
      background-size: cover;
      background-color: #404040;
+	 min-height: 100%;
      color: white;
 }
  h1, h2, h3, h4, h5, h6 {
@@ -250,6 +251,11 @@ figcaption {
 
 
 /* Footer */
+
+form {
+	border: 1px solid white;
+	padding: 1em;
+}
  
  .form-control {
      border-radius: 0;
