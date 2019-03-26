@@ -1,47 +1,65 @@
-/*Color Palette 
-
-lighter gray - #404040 
-darker gray - #333333 */
-
+/*Color Palette lighter gray - #404040 darker gray - #333333 */
 /* border box fix */
- html {
-     box-sizing: border-box;
-	 background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/Koh_Phi_Phi_Don.jpg');
-     background-attachment: fixed;
-     background-repeat: no-repeat;
-     background-position: top;
-     background-size: cover;
-     background-color: #404040;
-     color: white;
-	 -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-}
  *, *:before, *:after {
      box-sizing: inherit;
 }
 
+/*Media Queries*/
+
+@media only screen and (max-width: 1024px) {
+  header #home {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../images/photography/thailand/Koh_Phi_Phi_Don_web1024.jpg);
+    background-attachment: scroll;
+  }
+
+  main #experience {
+    background-image: linear-gradient( rgba(64, 64, 64, 0.6), rgba(64, 64, 64, 0.6) ), url(../images/photography/office_buildings1024.jpg);
+    background-attachment: scroll;
+  }
+
+  body header h2 {
+    font-size: 14px;
+}
+
+  #portfolio .modal-close {
+	  right: 1rem;
+  }
+
+  html body {
+	  font-size: 16px;
+  }
+}
+
 /* Global styles */
+ html, body {
+     height: 100%;
+}
+ html {
+     box-sizing: border-box;
+     width: 100%;
+}
+
  body {
      margin: 0;
-     padding-top: 65px;
-     font-family: "Helvetica";
+     font-family: 'Muli', sans-serif;
      font-weight: 400;
-     letter-spacing: 0.03em;
-	 background: none;
-	 color: white;
+     letter-spacing: 0.03rem;
+     background: none;
+     color: white;
+}
+
+body, .btn-default {
+	font-size: 18px;
 }
  h1, h2, h3, h4, h5, h6 {
      text-transform: uppercase;
-     letter-spacing: 0.1em;
+     letter-spacing: 0.5rem;
      font-weight: 400;
 }
  h2 {
-     padding-bottom: 2em;
-     margin: 0;
+     margin-bottom: 5rem;
      text-align: center;
 }
-
 /* Gray and white background sections */
  .gray-bg {
      background-color: #404040;
@@ -72,14 +90,13 @@ darker gray - #333333 */
      text-decoration: underline;
      transition: 0.3s;
 }
-
 /* Navbar */
  .navbar {
      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
      border: none;
      border-radius: 0%;
      margin-bottom: 0px;
-     padding: 0 10%;
+     padding: 0 3rem;
      transition: 0.5s;
 }
  .navbar:hover {
@@ -95,18 +112,18 @@ darker gray - #333333 */
      border-radius: 0%;
      margin-bottom: 0px;
      transition: 0.5s;
-	 padding: none;
+     padding: none;
 }
  .navbar-brand > img {
      height: 100%;
      width: auto;
 }
  .navbar-brand {
-     height: 4em;
+     height: 8rem;
 }
  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
      color: white;
-     padding: 2em;
+     padding: 3rem;
 }
  .navbar-default .navbar-nav > li > a:hover {
      background-color: white;
@@ -117,9 +134,7 @@ darker gray - #333333 */
      color: white;
      background-color: rgba(51, 51, 51, 0.5);
 }
-
 /* Navbar dropdown menu */
-
  .navbar-nav > li > .dropdown-menu {
      background: rgba(64, 64, 64, 0.5);
      border: none;
@@ -128,12 +143,10 @@ darker gray - #333333 */
      padding: none;
      transition: 0.5s;
 }
-
-.navbar-nav .open .dropdown-menu {
-	background: rgba(102, 102, 102, 0.9);
-    border: none;
+ .navbar-nav .open .dropdown-menu {
+     background: rgba(102, 102, 102, 0.9);
+     border: none;
 }
-
  .dropdown-menu > li > a {
      color: white;
      margin: none;
@@ -147,21 +160,18 @@ darker gray - #333333 */
      color: #404040;
      transition: 0.3s;
 }
-
 /* Navbar toggle button */
-
-.navbar-toggle {
+ .navbar-toggle {
      border: solid white 1px;
-	 border-radius: 0;
+     border-radius: 0;
      background: transparent !important;
-	 height: 3em;
-	 width: auto;
-	 margin-top: 1em;
+     height: 5rem;
+     width: auto;
+     margin-top: 2rem;
 }
  .navbar-toggle .icon-bar {
      width: 22px;
      transition: all 0.2s;
-	 
 }
  .navbar-toggle .top-bar {
      transform: rotate(45deg);
@@ -176,97 +186,171 @@ darker gray - #333333 */
 }
  .navbar-toggle.collapsed .top-bar {
      transform: rotate(0);
-	 background-color: white;
+     background-color: white;
 }
  .navbar-toggle.collapsed .middle-bar {
      opacity: 1;
-	 background-color: white;
+     background-color: white;
 }
  .navbar-toggle.collapsed .bottom-bar {
      transform: rotate(0);
-	 background-color: white;
+     background-color: white;
 }
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+ .navbar-default .navbar-toggle .icon-bar {
+     background-color: white;
 }
-
-
 
 /* Header */
-
- .jumbotron {
-     text-align: center;
-     padding: 25em 0;
-     margin: 0;
-     background: none;
-	 font-size: 1em;
+#home {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url(../images/photography/thailand/Koh_Phi_Phi_Don_web.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #404040;
+    color: white;
+    width: 100%;
+    height: 100%;
 }
 
 header h2 {
-	font-size: 1.5em;
+    font-size: 2rem;
 }
+
+ .jumbotron {
+     text-align: center;
+     padding: 40rem 0;
+     margin: 0;
+     background: none;
+}
+
 
 /* Experience */
-
-#experience h3 {
-	text-align: center;
-	margin-bottom: 2em;
+ #experience {
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-image: linear-gradient( rgba(64, 64, 64, 0.6), rgba(64, 64, 64, 0.6) ), url(../images/photography/office_buildingsweb.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
 }
-
-.job {
-	margin-bottom: 3em;
+ #experience h3 {
+     text-align: center;
+     margin-bottom: 5rem;
 }
+ #experience h4 {
+   margin-bottom: 2rem;
+ }
  .job-img {
-     height: 10em;
-     width: 10em;
-     border-radius: 0.5em;
-     margin-bottom: 1em;
+     height: 15rem;
+     width: 15rem;
+     border-radius: 1rem;
+     margin-bottom: 1rem;
 }
  .job-title {
      text-transform: uppercase;
 }
-
 /* Portfolio */
+ #portfolio h3 {
+     text-align: center;
+     margin-bottom: 5rem;
+}
+ #portfolio .icon {
+     height: 7rem;
+     width: 7rem;
+     margin: 1rem;
+}
 
-#portfolio h3, h4 {
+/*Modal*/
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	padding-top: 20rem;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 70rem;
+}
+
+#modal-caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 70rem;
 	text-align: center;
+	color: #ccc;
+	padding: 10rem 0;
+	height: 10rem;
+}
+
+.modal-close {
+	position: absolute;
+	top: 15rem;
+	right: 15rem;
+	color: #f1f1f1;
+	font-size: 5rem;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.modal-close:hover, .modal-close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 /* Photography */
-
-.gallery-img {
-    height: 100%;
-    width: 30em;
-	margin-bottom: 2em;
+ .gallery-img {
+     height: 100%;
+     width: 35rem;
+     margin-bottom: 2rem;
 }
 
-figure {
-	margin: 0 0 5em 0;
+.gallery-img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
-figcaption {
-	text-align: center;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #333333;
+ figure {
+     margin: 0 0 5rem 0;
+}
+ figcaption {
+     text-align: center;
+     padding-bottom: 1rem;
+     border-bottom: 1px solid #333333;
 }
 
-/* Web */
-
-#portfolio .icon {
-	height: 5em;
-	width: 5em;
-	margin: 1em;
+/*Web*/
+.codepen {
+	margin-bottom: 2rem;
+	width: 15rem;
 }
-
-
 /* Footer */
- 
  form {
-	 border: 1px white solid;
-	 padding: 1em;
- }
- 
+     border: 1px white solid;
+     padding: 2rem;
+}
+ #message {
+     height: 10rem;
+     font-size: 16px;
+}
  .form-control {
      border-radius: 0;
 }
@@ -275,6 +359,7 @@ figcaption {
      border-color: white;
      color: white;
      border-radius: 0;
+     padding: 1rem 3rem;
 }
  .btn-default:hover {
      background-color: white;
@@ -283,11 +368,11 @@ figcaption {
      color: #404040;
 }
  .input-lg {
-     height: 5em;
+     height: 5rem;
 }
  .icon {
-     height: 2em;
-     width: 2em;
+     height: 3rem;
+     width: 3rem;
      opacity: 0.5;
 }
  .icon:hover {
@@ -295,7 +380,6 @@ figcaption {
      transition: 0.3s;
 }
  #copyright {
-     padding-top: 4em;
+     padding-top: 4rem;
      text-align: center;
 }
- 
