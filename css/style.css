@@ -30,6 +30,54 @@
   }
 }
 
+/*Animations*/
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes downFromTop {
+   from {
+     transform: translateY(-100px);
+     opacity: 0;
+   }
+   to {
+     transform: translateY(0);
+     opacity: 1;
+   }
+}
+
+@keyframes upFromTop {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+nav {
+  animation-name: downFromTop;
+  animation-duration: 3s;
+}
+
+#home h1 {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
+ #home h2 {
+   animation-name: upFromTop;
+   animation-duration: 3s;
+ }
+
 /* Global styles */
  html, body {
      height: 100%;
